@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Store Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>DOM Store</h1>
+
+        
+        <form id="product-form">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Тауар атауы">
+                <small class="error-msg" id="name-error"></small>
+            </div>
+
+            <div class="form-group">
+                <input type="number" id="price" placeholder="Бағасы">
+                <small class="error-msg" id="price-error"></small>
+            </div>
+
+            <div class="form-group">
+                <input type="number" id="qty" placeholder="Саны (qty)">
+                <small class="error-msg" id="qty-error"></small>
+            </div>
+
+            <button type="submit">Қосу</button>
+        </form>
+
+        
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Атауы</th>
+                        <th>Бағасы</th>
+                        <th>Саны</th>
+                        <th>Барлығы</th>
+                        <th>Әрекеттер</th>
+                    </tr>
+                </thead>
+                <tbody id="product-list">
+                    
+                </tbody>
+            </table>
+        </div>
+
+        
+        <div class="total-container">
+            <h2>Жалпы сома: <span id="grand-total">0</span> ₸</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
